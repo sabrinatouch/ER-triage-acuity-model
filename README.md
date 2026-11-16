@@ -11,7 +11,7 @@ On 2022 walk-ins, logistic regression caught **57.8% of critical patients (95% C
 | File | What it is |
 |---|---|
 | `er-triage-acuity.ipynb` | The full analysis: cleaning, baseline, both models, 2022 test, failure analysis, clustering |
-| `nhamcs_data_2018_22.csv` | The data: 58,124 NHAMCS ED visits, 2018–2022. Included in the repo, so there is nothing to download |
+| `nhamcs_data_2018_22.csv` | The data: 58,124 NHAMCS ED visits, 2018–2022. Included in the repo. If the notebook can't read the local copy, it downloads the same file from this repo on GitHub |
 
 ## Reproduce the headline number
 
