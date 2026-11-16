@@ -18,7 +18,7 @@ On 2022 walk-ins, logistic regression caught **57.8% of critical patients (95% C
 **1. Install the dependencies.** These are the versions the results were checked with (Python 3.13.7):
 
 ```bash
-pip install numpy==2.5.4 pandas==3.1.1 scikit-learn==1.9.1 scipy matplotlib jinja2 jupyter
+pip install numpy==2.5.4 pandas==3.1.1 scikit-learn==1.9.1 scipy matplotlib jupyter
 ```
 
 **2. Run the notebook from the repo folder:**
