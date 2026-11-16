@@ -1,3 +1,11 @@
+**2. Quickest check: print the headline.** From the repo folder:
+
+```bash
+python headline.py
+```
+
+This runs only the steps the headline depends on, with the same code, settings and seed as the notebook, and prints the headline paragraph above. It takes about 1–2 minutes.
+
 # ER triage acuity model
 
 CSCI 5622 project. Using only information available at sign-in, a logistic regression ranks emergency department walk-ins so staff can pull likely-critical patients (ESI 1–2) forward in the triage line. Data: NHAMCS emergency department visits, 2018–2022. The model trains on 2018–2021, and 2022 is the held-out test set.
@@ -11,6 +19,7 @@ Before triage, using only information available at sign-in, logistic regression 
 | File | What it is |
 |---|---|
 | `er-triage-acuity.ipynb` | The full analysis: cleaning, baseline, both models, 2022 test, failure analysis, clustering |
+| `headline.py` | A standalone script that reproduces and prints the headline paragraph |
 | `nhamcs_data_2018_22.csv` | The data: 58,124 NHAMCS ED visits, 2018–2022. Included in the repo. If the notebook can't read the local copy, it downloads the same file from this repo on GitHub |
 
 ## Reproduce the headline number
@@ -21,7 +30,15 @@ Before triage, using only information available at sign-in, logistic regression 
 pip install numpy==2.5.4 pandas==3.1.1 scikit-learn==1.9.1 scipy matplotlib jupyter
 ```
 
-**2. Run the notebook from the repo folder:**
+**2. Quickest check: print the headline.** From the repo folder:
+
+```bash
+python headline.py
+```
+
+This runs only the steps the headline depends on, with the same code, settings and seed as the notebook, and prints the headline paragraph above. It takes about 1–2 minutes.
+
+**Or run the full notebook from the repo folder:**
 
 ```bash
 jupyter nbconvert --to notebook --execute er-triage-acuity.ipynb --output er-triage-acuity-run.ipynb
