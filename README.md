@@ -4,7 +4,7 @@ CSCI 5622 project. Using only information available at sign-in, a logistic regre
 
 ## Headline result
 
-On 2022 walk-ins, logistic regression caught **57.8% of critical patients (95% CI 54.8–60.7%)** at a false-positive rate of 0.164. The baseline rule "prioritize patients aged 65+" caught **26.3% (95% CI 23.8–29.0%)** at a false-positive rate of 0.147.
+Before triage, using only information available at sign-in, logistic regression caught 57.8% of critical (ESI 1–2) walk-ins [95% CI: 54.8–60.7%] (n = 1,076 critical) on the held-out 2022 data, at an FPR of 0.164 [0.156–0.173] (n = 7,052 non-critical). The baseline rule of prioritizing patients 65+ caught 26.3% [23.8–29.0%] at an FPR of 0.147 [0.139–0.156]. The gain was +31.5 percentage points (paired bootstrap 95% CI: +27.9 to +35.2). The model struggled most on children aged 0–17, catching only 33.1% [26.5–40.5%] of critical pediatric walk-ins (n = 1,881 visits, 169 critical). If the ED added a quick vital-signs check at registration, the main weakness of this model would be solvable with better data, and the recommendation would change to a model retrained with vitals.
 
 ## Contents
 
@@ -29,7 +29,7 @@ jupyter nbconvert --to notebook --execute er-triage-acuity.ipynb --output er-tri
 
 You can also open the notebook in Jupyter or VS Code and use **Restart & Run All**. With the default settings, a full run takes about 3 minutes on a 24-core machine.
 
-**3. Find the numbers.** The headline is in the table under **"FINAL EVAL ON TEST 2022"**, in the *2022 walk-ins (held-out test set)* table:
+**3. Find the numbers.** The last cell, **Headline**, prints the full headline paragraph above. The underlying table is under **"FINAL EVAL ON TEST 2022"**, in the *2022 walk-ins (held-out test set)* table:
 
 | Rule | Recall | Recall 95% CI | FPR |
 |---|---|---|---|
